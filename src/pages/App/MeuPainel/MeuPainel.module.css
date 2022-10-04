@@ -1,5 +1,5 @@
 .meu_painel {
-  height: 100vh;
+  min-height: 900px;
 
   display: flex;
   flex-direction: column;
