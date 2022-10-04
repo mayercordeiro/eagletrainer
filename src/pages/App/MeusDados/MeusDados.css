@@ -1,0 +1,23 @@
+.meu_dados {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+.meu_dados h3 {
+  font-size: 16px;
+  color: #f8fbff;
+  text-align: right;
+  padding: 16px 16px 0;
+}
+.meu_dados_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 0 32px;
+}
+.meu_dados_content form {
+  margin-top: 8px;
+}

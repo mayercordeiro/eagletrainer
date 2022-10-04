@@ -1,0 +1,78 @@
+.headerApp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  background: #5fccff;
+  z-index: 2000;
+  padding-top: 120px;
+  border-top-left-radius: 16px;
+}
+.navigation ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 62px;
+  list-style: none;
+}
+.navigation ul li {
+  z-index: 1000;
+}
+.icon img {
+  width: 48px;
+  transition: ease 0.4s;
+}
+.icon img:not(.activeMenu img):hover {
+  transform: scale(120%);
+}
+.activeMenu img {
+  transform: scale(146%) translateX(26px) translateY(11px) rotate(360deg);
+  transform-origin: center center;
+  transition: ease 1s;
+}
+.indicator {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background-color: #5fccff;
+  border-radius: 50%;
+  left: 8px;
+  top: -14px;
+  transition: ease 0.6s;
+}
+.indicator::before {
+  content: "";
+  position: absolute;
+  top: -64px;
+  left: 52px;
+  background-color: transparent;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: -20px 15px 0 -14px #5fccff;
+}
+.indicator::after {
+  content: "";
+  position: absolute;
+  top: 104px;
+  left: 52px;
+  background-color: transparent;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: -20px -15px 0 -14px #5fccff;
+}
+.navigation ul li:nth-child(1).activeMenu ~ .indicator {
+  transform: translateY(calc(114px * 0));
+}
+.navigation ul li:nth-child(2).activeMenu ~ .indicator {
+  transform: translateY(calc(114px * 1));
+}
+.navigation ul li:nth-child(3).activeMenu ~ .indicator {
+  transform: translateY(calc(114px * 2));
+}
+.navigation ul li:nth-child(4).activeMenu ~ .indicator {
+  transform: translateY(calc(114px * 3));
+}

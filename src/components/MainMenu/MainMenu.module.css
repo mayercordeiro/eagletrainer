@@ -1,0 +1,8 @@
+.navigation_auth {
+  width: 62px;
+  cursor: pointer;
+
+  z-index: 2500;
+
+  position: absolute;
+}

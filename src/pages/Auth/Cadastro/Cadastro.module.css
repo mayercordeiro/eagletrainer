@@ -1,0 +1,61 @@
+.register_container {
+  display: flex;
+  justify-content: center;
+  margin: 80px 0 40px;
+}
+.register {
+  width: 330px;
+  border-radius: 16px;
+  background-color: #f8fbff;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.register_header {
+  width: 100%;
+  position: relative;
+
+  font-size: 24px;
+  color: #545454;
+  margin-top: 16px;
+  text-align: center;
+}
+.register_header > h1::before {
+  content: url("../../../assets/images/icon-new-register.svg");
+  position: absolute;
+  left: 16px;
+  top: 2px;
+}
+.register_form {
+  width: 100%;
+  padding: 0 16px;
+  margin: 32px 0;
+}
+.register_form input[type="submit"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(91.15deg, #b4b4b4 -42.44%, #295182 115.15%);
+  border: unset;
+  border-radius: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+
+  width: 296px;
+  height: 50px;
+
+  font-size: 18px;
+  font-weight: 700;
+  color: #f8fbff;
+  text-decoration: none;
+}
+.register_form a {
+  display: block;
+  text-align: right;
+  margin: 0px 0 32px;
+  font-size: 14px;
+  color: #545454;
+  text-decoration: none;
+}
